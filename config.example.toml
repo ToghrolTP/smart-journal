@@ -1,0 +1,42 @@
+# Rusty Diary Configuration File
+# Copy this file to ~/.config/rusty_diary/config.toml and modify as needed
+
+# Directory where journal entries will be stored
+# Default: ~/Documents/RustyDiary
+# You can use absolute paths or paths relative to your home directory
+journal_directory = "/home/user/Documents/RustyDiary"
+
+# File format for journal entries
+# Options: "Markdown", "PlainText", "Json"
+# - Markdown: Processed with LLM for beautiful formatting (requires Ollama)
+# - PlainText: Simple text files, no processing
+# - Json: Structured data with metadata and timestamps
+file_format = "Markdown"
+
+# Date format used for file naming
+# Uses standard strftime format specifiers
+# Default: "%Y-%m-%d" (produces files like "2024-01-15.md")
+# Examples:
+#   "%Y-%m-%d"          -> 2024-01-15
+#   "%Y%m%d"            -> 20240115
+#   "%B-%d-%Y"          -> January-15-2024
+date_format = "%Y-%m-%d"
+
+# Enable automatic backups (future feature)
+# When enabled, creates backup copies of journal entries
+auto_backup = false
+
+# External editor command (optional, future feature)
+# Uncomment and set to your preferred editor for advanced editing
+# Examples:
+#   editor_command = "vim"
+#   editor_command = "code"
+#   editor_command = "nano"
+#   editor_command = "emacs"
+# editor_command = "vim"
+
+# Additional settings (future features)
+# theme = "default"
+# encryption_enabled = false
+# cloud_sync_enabled = false
+# search_indexing = true
